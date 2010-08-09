@@ -19,11 +19,12 @@
 import pygame, sys, os
 from pygame.locals import * 
 
-def setup_screen():
-	window = pygame.display.set_mode((468, 60))
-	pygame.display.set_caption('Dragons!  They come!')
-	screen = pygame.display.get_surface() 
+class Screen:
+	def __init__(self):
+		pygame.init()
+		self.window = pygame.display.set_mode((600, 480))
+		pygame.display.set_caption('Dragons!  They come!')
+		self.main_surface = pygame.display.get_surface() 
 
-pygame.init()
-setup_screen()
-
+s = Screen()
+system.wait(4)

@@ -16,14 +16,5 @@
 # You should have received a copy of the GNU General Public License along
 # with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import pygame, sys, os
-from pygame.locals import * 
-
-def setup_screen():
-	window = pygame.display.set_mode((600, 480))
-	pygame.display.set_caption('Dragons!  They come!')
-	screen = pygame.display.get_surface() 
-
-pygame.init()
-setup_screen()
-
+s = Screen()
+system.wait(4)

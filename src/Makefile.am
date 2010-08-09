@@ -8,4 +8,5 @@ bin_SCRIPTS = dragonstheycome.py
 dragonstheycomedir = $(pythondir)/dragonstheycome
 
 dragonstheycome_PYTHON = \
-	dragonstheycome.py
+	dragonstheycome.py\
+	screen.py
