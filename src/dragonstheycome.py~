@@ -21,10 +21,54 @@ from pygame.locals import *
 
 class Screen:
 	def __init__(self):
+		print("Initialzing pygame...")
 		pygame.init()
-		self.window = pygame.display.set_mode((600, 480))
+		self.window = pygame.display.set_mode((800, 480))
 		pygame.display.set_caption('Dragons!  They come!')
-		self.main_surface = pygame.display.get_surface() 
+		self.main_surface = pygame.display.get_surface()
+		
+		self.sprite_list = []
+	
+	def add_sprite(self, s):
+		sprite_list.add(s)
 
-s = Screen()
-system.wait(4)
+class Sprite(pygame.sprite.Sprite):
+	def __init(self):
+		pygame.sprite.Sprite.__init__(self)
+
+class Level():
+	def __init(self):
+		print("load level here")
+		#TODO load level
+
+class Player():
+	def __init(self):
+		#TODO write Player constructor
+		print("create player constructor")
+	
+	def button_pushed(self, keystate):
+		if keystate[K_UP]:
+			print("up pushed")
+
+def main():
+	screen = Screen()
+	current_level = Level()
+	player = Player()
+	clock = pygame.time.Clock()
+
+	run = True
+	while run:
+		events = pygame.event.get()
+		
+		for event in events:
+			if event.type == QUIT:
+				run = False
+			
+			keystate = pygame.key.get_pressed()
+			player.button_pushed(keystate)
+			
+		pygame.display.flip()
+		clock.tick(30)
+	        
+if __name__ == "__main__":
+    main()
