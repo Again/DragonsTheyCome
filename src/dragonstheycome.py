@@ -16,7 +16,7 @@
 # You should have received a copy of the GNU General Public License along
 # with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import screen, level
+import game_screen, level
 import pygame, sys, os
 from pygame.locals import *
 
@@ -43,8 +43,8 @@ class Player():
 			print("right")
 
 def main():
-	screen = Screen()
-	current_level = Level()
+	screen = game_screen.Screen()
+	current_level = level.Level()
 	player = Player()
 	clock = pygame.time.Clock()
 

@@ -12,7 +12,18 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor Boston, MA 02110-1301,  USA
 
-class Level():
-	def __init(self):
-		print("load level here")
-		#TODO load level 
+import pygame, sys, os
+from pygame.locals import *
+
+class Screen:
+	def __init__(self):
+		print("Initialzing pygame...")
+		pygame.init()
+		self.window = pygame.display.set_mode((800, 480))
+		pygame.display.set_caption('Dragons!  They come!')
+		self.main_surface = pygame.display.get_surface()
+		
+		self.sprite_list = []
+	
+	def add_sprite(self, s):
+		sprite_list.add(s)
