@@ -16,30 +16,16 @@
 # You should have received a copy of the GNU General Public License along
 # with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import screen, level
 import pygame, sys, os
-from pygame.locals import * 
-
-class Screen:
-	def __init__(self):
-		print("Initialzing pygame...")
-		pygame.init()
-		self.window = pygame.display.set_mode((800, 480))
-		pygame.display.set_caption('Dragons!  They come!')
-		self.main_surface = pygame.display.get_surface()
-		
-		self.sprite_list = []
-	
-	def add_sprite(self, s):
-		sprite_list.add(s)
+from pygame.locals import *
 
 class Sprite(pygame.sprite.Sprite):
 	def __init(self):
 		pygame.sprite.Sprite.__init__(self)
-
-class Level():
-	def __init(self):
-		print("load level here")
-		#TODO load level
+	
+	def update(self):
+		print("Updating
 
 class Player():
 	def __init(self):
