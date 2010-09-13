@@ -25,7 +25,7 @@ class Sprite(pygame.sprite.Sprite):
 		pygame.sprite.Sprite.__init__(self)
 	
 	def update(self):
-		print("Updating
+		print("Updating")
 
 class Player():
 	def __init(self):
